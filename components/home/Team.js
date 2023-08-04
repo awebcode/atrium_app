@@ -8,14 +8,14 @@ const Team = () => {
         <div className="img-1">
           <Image
             src="/team-1.jpg"
-            alt=""
+            alt="image"
             height={1000}
             width={1000}
             layout="responsive"
           />
         </div>
         <div className="img-2">
-          <Image src="/team2.jpg" alt="" height={1000} width={1000} layout="responsive" />
+          <Image src="/team2.jpg" alt="img" height={1000} width={1000} layout="responsive" />
         </div>
       </div>
       <div className="team-right">

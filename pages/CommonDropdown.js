@@ -79,7 +79,7 @@ const CommonDropdown = (props) => {
                 </li>
                 <li>
                   {" "}
-                  <a href="/Blog">Blogs</a>
+                  <Link href="/Blog">Blogs</Link>
                   <ul>
                     <li>
                       <a href="#">All Posts</a>

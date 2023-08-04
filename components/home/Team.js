@@ -6,7 +6,7 @@ const Team = () => {
     <div className="team">
       <div className="team-left">
         <div className="img-1">
-          <Image src="/team-1.jpg" alt="xx" height={300} width={400} />
+          <Image src="/team1.jpg" alt="xx" height={300} width={400} />
         </div>
         <div className="img-2">
           <Image src="/team2.jpg" alt="xx" height={300} width={340} />
@@ -14,11 +14,11 @@ const Team = () => {
       </div>
       <div className="team-right">
         <h2>WHO WE ARE</h2>
-        <h1>WE'RE A TEAM OF TALENTED DEVELOPERS & DESIGNERS</h1>
+        <h1>WE&apos;RE A TEAM OF TALENTED DEVELOPERS & DESIGNERS</h1>
         <p>
           In addition to all the branding and marketing features and benefits, our clients
-          get to enjoy the advantages of a time-tested and refined workflow that is
-          custom-tailored to each project!
+          get to enjoy the advantages of a time-tested and refined workflow that is custom
+          tailored to each project!
         </p>
         <div className="team-right-inner">
           <div>

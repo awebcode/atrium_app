@@ -1,0 +1,41 @@
+.haveProject{
+    padding: 80px 50px;
+    background-color: #0167DA;
+    color: var(--white);
+}
+.haveProjectContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.haveProjectContainer h1{
+    font-size: 30px;
+color: var(--white);
+    font-weight: 700;
+}
+.haveProjectContainer span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.haveProjectContainer svg{
+    font-size: 20px;
+    color: white;
+}
+@media(max-width:768px){
+    .haveProjectContainer h1{
+        margin: 10px 0px;
+    font-size: 20px;
+color: var(--white);
+    font-weight: 700;
+}
+.haveProjectContainer span{
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.haveProjectContainer svg{
+    font-size: 14px;
+    color: white;
+}
+}

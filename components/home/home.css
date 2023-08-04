@@ -1,0 +1,139 @@
+.slider-container {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 50px;
+}
+
+.left-side {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.left-side h2 {
+  font-size: 20px;
+  color: #0167da;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.left-side h1 {
+  font-size: 55px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 2;
+  color: #0d0d11d0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.left-side p {
+  font-size: 16px;
+  color: var(--primary-color);
+  margin: 8px 5px;
+  line-height: 1.2;
+}
+.left-side button {
+  background-color: var(--secondary-color);
+  padding: 18px 60px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: var(--white);
+  margin: 10px 5px;
+}
+.right-side {
+  flex: 1;
+  overflow: hidden;
+  height: 550px;
+  width: 130vw;
+}
+
+.right-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.slider-buttons button {
+  margin: 10px 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.mouse {
+  position: absolute;
+  top: 90%;left: 50%;transform: translate(-150%,-80%);
+  color: red;
+  font-size: 30px;
+}
+.mouse img{
+  font-size: 45px;
+  width: 45px;height: 45px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  animation: updown 1.5s linear infinite;
+}
+@keyframes updown{
+  0%{
+    transform: translateY(-15px);
+  }
+  50%{
+    transform: translateY(-0px);
+  }
+  100%{
+    transform: translateY(-15px);
+  }
+}
+@media (max-width: 768px) {
+  
+  .slider-container {
+    height: 100auto;
+    flex-direction: column;
+    width: 100%;
+    padding:0px 10px;
+  }
+  .left-side {
+    flex: 100%;
+    height: 100%;
+    width: 100%;
+  }
+  .left-side h1 {
+    font-size: 25px;
+  }
+  .right-side {
+    flex: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  .slider-buttons {
+    margin-top: -20px;
+    flex-direction: row;
+  }
+  .left-side button {
+  background-color: var(--secondary-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: var(--white);
+  margin: 10px 5px;
+}
+  .mouse{
+    display: none;
+  }
+}

@@ -1,0 +1,135 @@
+.news-section {
+  padding: 80px 50px;
+}
+
+.news-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.news-header h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--primary-color);
+  position: relative;
+  margin: 20px 0px;
+}
+.news-header h2::after{
+      content:"";
+    position: absolute;
+    bottom: 0px;left: 45%;
+
+    width: 8%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    margin: -10px;
+}
+
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-card {
+  flex: 0 0 calc(33.33% - 20px);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card-image {
+  position: relative;
+  cursor: pointer;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-overlay span {
+  font-size: 48px;
+  color: #fff;
+}
+
+.news-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.news-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.news-date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #666;
+}
+
+.load-more-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.load-more-btn button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .news-container{
+        flex-direction: column;
+    }
+  .news-card {
+    flex: 0 0 calc(50% - 20px);
+  }
+  .news-header{
+    font-size: 14px;
+  }
+  .news-header h2{
+    font-size: 35px;
+  }
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;1,300;1,700&family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap');
+@import url("../components/navbar/navbar.css");
+@import url("../components/home/home.css");
+@import url("../components/home/about.css");
+@import url("../components/home/team.css");
+@import url("../components/home/projects.css");
+@import url("../components/home/client-says.css");
+@import url("../components/home/testimonial.css");
+@import url("../components/home/services.css");
+@import url("../components/home/pricing.css");
+@import url("../components/home/news.css");
+@import url("../components/home/haveaproject.css");
+@import url("../components/home/homeFooter.css");
+@import url("./dropdown.css");
+/* portfolio */
+@import url("../components/portfolio/portfolio.css");
+/* about */
+@import url("../components/about/about.css");
+/* contact */
+@import url("../components/contact/contact.css");
+:root{
+  --white:#fff;
+--primary-color:#25252c;
+--secondary-color:#6fb72f;
+--normal:#191d23;
+--normal-2:#B8BDB5;
+}
+*{
+margin: 0px;
+padding: 0px;
+outline: 0px;
+box-sizing: border-box;
+text-decoration: none;
+border: 0px;
+font-family: "Barlow Condensed",sans-serif;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #F2F5FA;
+}
+.container{
+  margin: 20px 80px;
+}
+@media(max-width:768px){
+ .container{
+  margin: 10px 20px;
+}
+}
+/* dropdown */

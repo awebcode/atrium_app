@@ -1,0 +1,122 @@
+.projects{
+    padding: 150px 60px;
+   
+    height: 80vh;
+   
+    width: 100%;
+}
+.projects .projects-header{
+ flex:1;
+
+}
+.projects .projects-header h2{
+color: var(--primary-color);
+font-size: 25px;
+text-transform: uppercase;
+font-weight: 500;
+margin-left: 10px;
+}
+.projects .projects-header h1{
+    color: var(--primary-color);
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-transform: uppercase;
+    position: relative;
+    margin: 10px 5px;
+}
+.projects .projects-header h1::after{
+    content:"";
+    position: absolute;
+    bottom: 0px;left: 0px;
+    width: 10%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: -10px 0px;
+}
+.projects .projects-header p{
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--primary-color);
+    line-height: 1.4;
+    margin-left: 14px;
+}
+/* project section */
+.projectSection {
+  margin-top: 20px;
+}
+.project-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.filterButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.filterButtons button {
+  padding: 8px 15px;
+  margin: 5px;
+  cursor: pointer;
+  
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.imageGallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+.imageItem {
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  width: 300px;
+}
+
+.imageItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media(max-width:768px){
+    .projects{
+        height: 100%;
+        width: 100%;
+    }
+    .projects .projects-header h2{
+        font-size: 18px;
+    }
+     .projects .projects-header h1{
+        font-size: 40px;
+    }
+    .project-nav{
+        flex-direction: column;
+    }
+    .filterButtons{
+        flex-direction: column;
+    }
+    .filterButtons button{
+        font-size: 14px;
+    }
+    .imageGallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+}
+    .imageItem{
+        height: 100%;
+        width: 100%;
+    }
+}

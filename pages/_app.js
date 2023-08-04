@@ -17,6 +17,8 @@ export default function App({ Component, pageProps }) {
           integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
           crossorigin="anonymous"
         />
+          <link rel = "icon" href ="/me.jpg" 
+        type = "image/x-icon"/>
       </Head>
     </>
   );

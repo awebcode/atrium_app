@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { Mouse, MouseOutlined } from "@material-ui/icons";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Head from "next/head";
 const sliderData = [
   {
     id: 1,
@@ -66,6 +67,10 @@ const RightSide = ({ currentSlide }) => (
     />
   </div>
 );
+export const metaData = {
+  title: "Artrium -Md Asikur Rahman",
+  description:"Artrium -Md Asikur"
+}
 
 const Home= () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -83,18 +88,15 @@ const Home= () => {
 
     return () => clearInterval(sliderInterval); // Clear interval on component unmount
   }, []);
-
   return (
     <>
+      <Head>
+        <title>Artrium -Md Asikur Rahman</title>
+        <meta name="description" content="Artrium -Md Asikur Description" />
+      </Head>
       <div className="container">
         <span className="mouse" onClick={() => Route.push("#about")}>
-          <Image
-            src="/icon/mouse.png"
-            alt="image"
-            height={100}
-            width={100}
-            
-          />
+          <Image src="/icon/mouse.png" alt="image" height={100} width={100} />
         </span>
         <div className="slider-container">
           <LeftSide currentSlide={currentSlide} />

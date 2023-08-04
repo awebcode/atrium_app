@@ -1,5 +1,6 @@
 import React from "react";
 import { DashboardOutlined } from "@mui/icons-material";
+import Image from "next/image";
 const data = [
   {
     icon: "/icon/coding.png",
@@ -40,7 +41,7 @@ const About = () => {
           {data.map((v, i) => {
             return (
               <div className="about-right-card" key={i}>
-                    <img src={v.icon} alt="" />
+                    <Image src={v.icon} alt="image" height={1000} width={1000} layout="responsive"/>
                     <h1>{v.head}</h1>
                     <h3>{v.foot}</h3>
               </div>

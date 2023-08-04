@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import EastIcon from "@mui/icons-material/East";
+import Image from "next/image";
 SwiperCore.use([Navigation, Pagination]);
 
 const images = [
@@ -55,7 +56,13 @@ const ClientSays = () => {
         <div className="swiper-wrapper">
           {images.map((image, index) => (
             <SwiperSlide key={index}>
-              <img src={image} alt={`Slide ${index + 1}`} />
+              <Image
+                src={image}
+                alt={`Slide ${index + 1}`}
+                height={1000}
+                width={1000}
+                layout="responsive"
+              />
             </SwiperSlide>
           ))}
         </div>

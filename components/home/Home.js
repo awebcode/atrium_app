@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import { Mouse, MouseOutlined } from "@material-ui/icons";
 import { useRouter } from "next/router";
+import Image from "next/image";
 const sliderData = [
   {
     id: 1,
@@ -87,7 +88,13 @@ const Home= () => {
     <>
       <div className="container">
         <span className="mouse" onClick={() => Route.push("#about")}>
-          <img src="/icon/mouse.png" alt=""/>
+          <Image
+            src="/icon/mouse.png"
+            alt="image"
+            height={1000}
+            width={1000}
+            layout="responsive"
+          />
         </span>
         <div className="slider-container">
           <LeftSide currentSlide={currentSlide} />

@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import EastIcon from "@mui/icons-material/East";
+import Image from "next/image";
 
 
 SwiperCore.use([Navigation, Pagination]);
@@ -80,7 +81,13 @@ const Testimonials = () => {
             <SwiperSlide key={index}>
               <div className="testimonial-content">
                 <div className="avatar">
-                  <img src={testimonial.avatar} alt={`Avatar ${index + 1}`} />
+                  <Image
+                    src={testimonial.avatar}
+                    alt={`Avatar ${index + 1}`}
+                    height={1000}
+                    width={1000}
+                    layout="responsive"
+                  />
                 </div>
                 <p className="testimonial-text">{testimonial.text}</p>
                 <p className="client-name">- {testimonial.name}</p>

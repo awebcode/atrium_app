@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const newsData = [
@@ -33,7 +34,13 @@ const NewsSection = () => {
         {newsData.map((item, index) => (
           <div className="news-card" key={index}>
             <div className="card-image">
-              <img src={item.image} alt={`News ${index + 1}`} />
+              <Image
+                src={item.image}
+                alt={`News ${index + 1}`}
+                height={1000}
+                width={1000}
+                layout="responsive"
+              />
               <div className="card-overlay">
                 <span>+</span>
               </div>

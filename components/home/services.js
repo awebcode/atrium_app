@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const data = [
   {
     icon: "/icon/coding.png",
@@ -30,7 +32,13 @@ const Services = () => {
             return (
               <div className="home-services-card" key={i}>
                 <div className="img">
-                  <img src={v.icon} alt="" />
+                  <Image
+                    src={v.icon}
+                    alt=""
+                    height={1000}
+                    width={1000}
+                    layout="responsive"
+                  />
                 </div>
                 <h2>{v.head}</h2>
                 <h3>{v.foot}</h3>

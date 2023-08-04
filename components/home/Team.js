@@ -1,14 +1,15 @@
+import Image from 'next/image';
 import React from 'react'
 
 const Team = () => {
   return (
     <div className="team">
       <div className="team-left">
-        <div className="img-1" >
-          <img src="/team-1.jpg" alt=""  />
+        <div className="img-1">
+          <Image src="/team-1.jpg" alt="xx" height={300} width={400} />
         </div>
         <div className="img-2">
-          <img src="/team2.jpg" alt="" />
+          <Image src="/team2.jpg" alt="xx" height={300} width={340} />
         </div>
       </div>
       <div className="team-right">
@@ -22,7 +23,7 @@ const Team = () => {
         <div className="team-right-inner">
           <div>
             <div className="img-1">
-              <img src="/icon/crypto.png" alt="" />
+              <Image src="/icon/crypto.png" alt="" height={100} width={80} />
             </div>
           </div>
           <div>

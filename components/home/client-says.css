@@ -40,7 +40,11 @@ font-size: 20px;
 
 .swiper-container {
   width: 100%;
-  height: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .swiper-slide img {
@@ -53,6 +57,7 @@ font-size: 20px;
         padding: 20px;
     }
     .swiper-container{
+      overflow: hidden;
         overflow-x: hidden;
     }
     .swiper-container .swiper-wrapper{

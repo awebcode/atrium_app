@@ -23,7 +23,7 @@ const Team = () => {
         <div className="team-right-inner">
           <div>
             <div className="img-1">
-              <Image src="/icon/crypto.png" alt="" height={100} width={80} />
+              <Image src="/icon/crypto.png" alt="" height={100} width={80} layout='responsive' />
             </div>
           </div>
           <div>

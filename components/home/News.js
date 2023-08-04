@@ -39,7 +39,7 @@ const NewsSection = () => {
                 alt={`News ${index + 1}`}
                 height={1000}
                 width={1000}
-                layout="responsive"
+                
               />
               <div className="card-overlay">
                 <span>+</span>

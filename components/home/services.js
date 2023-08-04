@@ -37,7 +37,7 @@ const Services = () => {
                     alt=""
                     height={1000}
                     width={1000}
-                    layout="responsive"
+                    
                   />
                 </div>
                 <h2>{v.head}</h2>

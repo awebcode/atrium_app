@@ -84,9 +84,9 @@ const Testimonials = () => {
                   <Image
                     src={testimonial.avatar}
                     alt={`Avatar ${index + 1}`}
-                    height={1000}
-                    width={1000}
-                    layout="responsive"
+                    height={100}
+                    width={100}
+                    
                   />
                 </div>
                 <p className="testimonial-text">{testimonial.text}</p>

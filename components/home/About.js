@@ -41,7 +41,7 @@ const About = () => {
           {data.map((v, i) => {
             return (
               <div className="about-right-card" key={i}>
-                    <Image src={v.icon} alt="image" height={1000} width={1000} layout="responsive"/>
+                    <Image src={v.icon} alt="image" height={100} width={100} />
                     <h1>{v.head}</h1>
                     <h3>{v.foot}</h3>
               </div>

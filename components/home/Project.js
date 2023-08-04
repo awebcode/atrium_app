@@ -78,7 +78,7 @@ const ProjectSection = () => {
               alt={image.alt}
               width={300}
               height={200}
-              layout="responsive"
+              
             />
           </motion.div>
         ))}

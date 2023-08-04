@@ -91,9 +91,9 @@ const Home= () => {
           <Image
             src="/icon/mouse.png"
             alt="image"
-            height={1000}
-            width={1000}
-            layout="responsive"
+            height={100}
+            width={100}
+            
           />
         </span>
         <div className="slider-container">

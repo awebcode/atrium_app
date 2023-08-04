@@ -61,7 +61,7 @@ const ClientSays = () => {
                 alt={`Slide ${index + 1}`}
                 height={1000}
                 width={1000}
-                layout="responsive"
+                
               />
             </SwiperSlide>
           ))}

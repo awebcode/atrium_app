@@ -1,0 +1,74 @@
+/* card */
+.ourserv .contact-card-containerx {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 50px;
+  width: 100%; /* Adjust padding for bigger screens */
+}
+
+.ourserv  .contact-cardx {
+    flex: 30%;
+ 
+  background-color: #f0f0f0b0;
+  display: flex;
+  justify-content: center;
+  align-items: start; /* Align content to the top */
+  flex-direction: column;
+  gap: 30px;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  cursor: pointer;
+}
+.ourserv  .contact-cardx img{
+    display: block;
+    float: left;
+}
+.ourserv  .contact-cardx:hover>img{
+  transform: scale(1.1);
+}
+
+
+.ourserv  .contact-cardx h1 {
+    text-align: left;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1.8;
+  font-family: "Popins";
+}
+.ourserv  .contact-cardx h1:hover{
+  color: var(--secondary-color);
+}
+.ourserv  .contact-cardx p {
+    text-align: left;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 768px) {
+  .contact-card-containerx {
+    flex-direction: column;
+    padding: 3px;
+  }
+
+  .contact-cardx {
+    padding:0.5 0.3rem;
+    height: auto;
+    width: 100%;
+  }
+  .contact-cardx svg{
+    font-size: 25px;
+  }
+.contact-cardx h1{
+  font-size: 30px;
+}
+.contact-cardx p{
+  font-size: 12px;
+}
+}

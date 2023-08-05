@@ -1,0 +1,85 @@
+/* Add your preferred styling for the video-container */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Style the video element */
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Create a dark gradient overlay */
+.video-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Style the text */
+.video-container .overlay h1 {
+  font-size: 75px;
+  font-weight: 800;
+  text-align: center;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+/* Style the play/pause button */
+#play-pause-button {
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hide the pause icon by default */
+.pause-icon {
+  display: none;
+}
+
+/* Show the pause icon when the video is playing */
+#background-video:not([paused]) + .overlay #play-pause-button .play-icon {
+  display: none;
+}
+
+#background-video[paused] + .overlay #play-pause-button .pause-icon {
+  display: inline;
+}
+#play-pause-button {
+     background-color: #fff;
+     padding: 30px;
+     border-radius: 50%;
+}
+#play-pause-button svg{
+    color: var(--secondary-color);
+}
+@media(max-width:768px){
+    .overlay h1 {
+  font-size: 35px !important;
+  font-weight: 400;
+  text-align: center;
+  max-width: 80%;
+  line-height: 1.5;
+}
+}

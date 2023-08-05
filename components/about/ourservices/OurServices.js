@@ -5,6 +5,9 @@ import CommonDropdown from "@/pages/CommonDropdown";
 import Dropdown from "@/pages/Dropdown";
 import { ArrowRightAltRounded, KeyboardBackspace } from "@mui/icons-material";
 import React from "react";
+import Video from "../ourHistory/Video";
+import Pricing from "@/components/home/Pricing";
+import Card from "./Card";
 
 const OurServices = () => {
   return (
@@ -15,6 +18,9 @@ const OurServices = () => {
           {/* <Services/> */}
         </div>
       </div>
+      <Card/>
+      <Video />
+      <Pricing/>
       <HaveAproject />
       <HomeFooter />
     </div>

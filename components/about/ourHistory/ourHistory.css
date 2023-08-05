@@ -1,0 +1,17 @@
+@import url(./video.css);
+@import url(./counter.css);
+@import url(./faq.css);
+.team-right .buttons{
+    display: flex;
+    padding: 10px;
+}
+.team-right .buttons button{
+    padding:6px 10px ;
+    background-color: #ccc;
+    font-size: 14px;
+    margin: 4px;
+  border-radius: 4px;
+}
+.team-right .buttons button:hover{
+    background-color: var(--secondary-color);
+}

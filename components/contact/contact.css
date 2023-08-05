@@ -20,7 +20,7 @@
 
 .contact-card {
   flex: 1;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0b0;
   display: flex;
   justify-content: center;
   align-items: start; /* Align content to the top */
@@ -36,7 +36,9 @@
 .contact-card:hover>svg{
   transform: scale(1.5);
 }
-
+.contact-card:hover>img{
+  transform: scale(1.1);
+}
 .contact-card svg {
   color: var(--secondary-color);
   font-size: 36px;

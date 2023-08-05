@@ -4,6 +4,10 @@ import CommonDropdown from "@/pages/CommonDropdown";
 import Dropdown from "@/pages/Dropdown";
 import { ArrowRightAltRounded, KeyboardBackspace } from "@mui/icons-material";
 import React from "react";
+import Home from "./Home";
+import Contact from "./Contact";
+import RightSide from "./RightImage";
+import LeftSide from "./LeftImage";
 
 const OurTeam = () => {
   return (
@@ -14,6 +18,10 @@ const OurTeam = () => {
          
         </div>
       </div>
+      <Home />
+      <RightSide />
+      <LeftSide/>
+      <Contact/>
       <HaveAproject />
       <HomeFooter />
     </div>

@@ -23,6 +23,9 @@
 @import url("../components/about/ourHistory/ourHistory.css");
 @import url("../components/about/ourTeam/ourTeam.css");
 @import url("../components/about/ourservices/ourServices.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root{
   --white:#fff;
 --primary-color:#25252c;
@@ -36,6 +39,8 @@ padding: 0px;
 outline: 0px;
 box-sizing: border-box;
 text-decoration: none;
+/* overflow-x: hidden;
+overflow-y: visible; */
 border: 0px;
 font-family: "Barlow Condensed",sans-serif;
 
@@ -45,6 +50,7 @@ html{
 }
 body{
   background-color: #F2F5FA;
+  overflow-x: hidden;
 }
 /* .container{
   padding: 20px 80px;

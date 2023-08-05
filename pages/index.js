@@ -41,7 +41,7 @@ export default function Index() {
       <Testimonials />
       <Services />
       <Pricing />
-      <NewsSection />
+      {/* <NewsSection /> */}
       <HaveAproject />
       <HomeFooter />
     </>

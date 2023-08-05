@@ -23,7 +23,7 @@ const Dropdown = () => {
             <Link className="active" href="/">
               Home
             </Link>
-            <ul>
+            {/* <ul>
               <li>
                 <a href="#">Home1</a>
               </li>
@@ -33,9 +33,9 @@ const Dropdown = () => {
               <li>
                 <a href="#">Home Boxed</a>
               </li>
-            </ul>
+            </ul> */}
           </li>
-          <li>
+          {/* <li>
             {" "}
             <Link href="/Feature">Features</Link>
             <ul>
@@ -52,7 +52,7 @@ const Dropdown = () => {
                 <a href="#">Privacy Policy</a>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li>
             {" "}
             <Link href="/Portfolio">Portfolio</Link>
@@ -75,7 +75,7 @@ const Dropdown = () => {
               </li>
             </ul>
           </li>
-          <li>
+          {/* <li>
             {" "}
             <Link href="/Blog">Blog</Link>
             <ul>
@@ -95,8 +95,8 @@ const Dropdown = () => {
                     <a href="#">3 Styles</a>
                   </li>
                 </ul>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#">Cheese Style +</a>
                 <ul>
                   <li>
@@ -108,7 +108,7 @@ const Dropdown = () => {
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li>
             {" "}
             <Link href="/Contact">Contact</Link>

@@ -25,7 +25,7 @@ const CommonDropdown = (props) => {
                   <Link className="active active-2" href="/">
                     Home
                   </Link>
-                  <ul>
+                  {/* <ul>
                     <li>
                       <a href="#">Home1</a>
                     </li>
@@ -35,9 +35,9 @@ const CommonDropdown = (props) => {
                     <li>
                       <a href="#">Home Boxed</a>
                     </li>
-                  </ul>
+                  </ul> */}
                 </li>
-                <li>
+                {/* <li>
                   {" "}
                   <Link href="/Feature">Features</Link>
                   <ul>
@@ -54,7 +54,7 @@ const CommonDropdown = (props) => {
                       <a href="#">Privacy Policy</a>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li>
                   {" "}
                   <Link href="/Portfolio">Portfolio</Link>
@@ -77,7 +77,7 @@ const CommonDropdown = (props) => {
                     </li>
                   </ul>
                 </li>
-                <li>
+                {/* <li>
                   {" "}
                   <Link href="/Blog">Blogs</Link>
                   <ul>
@@ -110,7 +110,7 @@ const CommonDropdown = (props) => {
                       </ul>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li>
                   {" "}
                   <Link href="/Contact">Contact</Link>

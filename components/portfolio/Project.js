@@ -19,25 +19,25 @@ const images = [
   {
     id: 2,
     src: "/projects/1.jpg",
-    alt: "Development",
+    alt: "Web Development",
     category: "development",
   },
   {
     id: 8,
     src: "/team1.jpg",
-    alt: "Development",
+    alt: "Web Development",
     category: "development",
   },
   {
     id: 3,
     src: "/projects/4.jpg",
-    alt: "Apps",
+    alt: "Apps Development",
     category: "apps",
   },
   {
     id: 9,
     src: "/projects/5.jpg",
-    alt: "Apps",
+    alt: "Apps Development",
     category: "apps",
   },
   {
@@ -52,12 +52,41 @@ const images = [
     alt: "Branding",
     category: "branding",
   },
+  {
+    id: 1,
+    src: "/a.jpg",
+    alt: "Web Design",
+    category: "web",
+  },
+  {
+    id: 6,
+    src: "/projects/3.jpg",
+    alt: "Web Design",
+    category: "web",
+  },
+  {
+    id: 22,
+    src: "/projects/5.jpg",
+    alt: "Web Development",
+    category: "development",
+  },
+  {
+    id: 35,
+    src: "/team2.jpg",
+    alt: "Web Development",
+    category: "development",
+  },
+  
   // Add more images with appropriate categories
 ];
 
 
 const ProjectSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const [visibleImages, setVisibleImages] = useState(8); // Number of images to display initially
+  const imagesPerLoad = 4; // Number of images to load on each "Load More" click
+  const [showLess, setShowLess] = useState(false); // State to control "Show Less" functionality
+
   const filteredImages =
     selectedCategory === "all"
       ? images
@@ -65,6 +94,18 @@ const ProjectSection = () => {
 
   const handleFilter = (category) => {
     setSelectedCategory(category);
+    setVisibleImages(4); // Reset the visible images count when changing categories
+    setShowLess(false); // Reset the "Show Less" state when changing categories
+  };
+
+  const handleLoadMore = () => {
+    setVisibleImages((prevVisible) => prevVisible + imagesPerLoad);
+    setShowLess(true); // Set "Show Less" state to true when clicking "Load More"
+  };
+
+  const handleShowLess = () => {
+    setVisibleImages(4); // Reset the visible images count when clicking "Show Less"
+    setShowLess(false); // Set "Show Less" state to false when clicking "Show Less"
   };
 
   return (
@@ -88,7 +129,7 @@ const ProjectSection = () => {
 
         <div className="imageGallery">
           <AnimatePresence>
-            {filteredImages.map((image) => (
+            {filteredImages.slice(0, visibleImages).map((image) => (
               <motion.div
                 key={image.id}
                 className={`${"imageItem"} ${"category"}`}
@@ -110,9 +151,20 @@ const ProjectSection = () => {
           </AnimatePresence>
         </div>
 
-        <div className="load-more">
-          <button type="#">Load More</button>
-        </div>
+        {/* Load More and Show Less Buttons */}
+        {filteredImages.length > visibleImages && (
+          <div className="load-more">
+            {showLess ? (
+              <button type="button" onClick={handleShowLess}>
+                Show Less
+              </button>
+            ) : (
+              <button type="button" onClick={handleLoadMore}>
+                Load More
+              </button>
+            )}
+          </div>
+        )}
       </div>
     </>
   );

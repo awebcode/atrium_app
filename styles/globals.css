@@ -18,6 +18,11 @@
 @import url("../components/about/about.css");
 /* contact */
 @import url("../components/contact/contact.css");
+/* about nested */
+@import url("../components/about/ourmission/ourmission.css");
+@import url("../components/about/ourHistory/ourHistory.css");
+@import url("../components/about/ourTeam/ourTeam.css");
+@import url("../components/about/ourservices/ourServices.css");
 :root{
   --white:#fff;
 --primary-color:#25252c;

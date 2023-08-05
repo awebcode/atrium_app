@@ -61,19 +61,19 @@ const CommonDropdown = (props) => {
                 </li>
                 <li>
                   {" "}
-                  <Link href="/About">About</Link>
+                  <Link href="#">About</Link>
                   <ul>
                     <li>
-                      <a href="#">Our Mission</a>
+                      <Link href="/ourmission">Our Mission</Link>
                     </li>
                     <li>
-                      <a href="#">Our History</a>
+                      <Link href="/ourhistory">Our History</Link>
                     </li>
                     <li>
-                      <a href="#">Our Services</a>
+                      <Link href="/ourservices">Our Services</Link>
                     </li>
                     <li>
-                      <a href="#">Our Team</a>
+                      <Link href="/ourteam">Our Team</Link>
                     </li>
                   </ul>
                 </li>

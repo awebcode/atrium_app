@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Image from "next/image";
 
-import { motion } from "framer-motion";
+import { motion,AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const images = [
@@ -56,6 +56,8 @@ const images = [
   // Add more images with appropriate categories
 ];
 
+
+
 const ProjectSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("web");
   const filteredImages =
@@ -68,40 +70,68 @@ const ProjectSection = () => {
   };
 
   return (
-    <div className="projectSection">
-      <div className="project-nav">
-        <div className="filterButtons">
-          
-          <button onClick={() => handleFilter("web")}>WEB DESIGN</button>
-          <button onClick={() => handleFilter("development")}>DEVELOPMENT</button>
-          <button onClick={() => handleFilter("apps")}>APPS</button>
-          <button onClick={() => handleFilter("branding")}>BRANDING</button>
-              </div>
-              <div>
-                <Link  href="/projects" style={{cursor:"pointer",color:"var(--primary-color)",fontSize:"14px"}}>see all projects</Link>
-              </div>
-      </div>
+    <>
+      <div className="projectSection">
+        <div className="project-nav">
+          <div className="filterButtons">
+            <button onClick={() => handleFilter("web")}>WEB DESIGN</button>
+            <button onClick={() => handleFilter("development")}>DEVELOPMENT</button>
+            <button onClick={() => handleFilter("apps")}>APPS</button>
+            <button onClick={() => handleFilter("branding")}>BRANDING</button>
+          </div>
+          <div>
+            <Link
+              href="/projects"
+              style={{
+                cursor: "pointer",
+                color: "var(--primary-color)",
+                fontSize: "14px",
+              }}
+            >
+              see all projects
+            </Link>
+          </div>
+        </div>
 
-      <motion.div className="imageGallery" layout>
-        {filteredImages.map((image) => (
-          <motion.div
-            key={image.id}
-            className={`${"imageItem"} ${"category"}`}
-                layoutId={`image-${image.id}`}
-                layout
-                animate={{opacity:1}}
-          >
-            <Image
-              src={image.src}
-              alt={image.alt}
-              width={300}
-              height={200}
-              layout="responsive"
-            />
-          </motion.div>
-        ))}
-      </motion.div>
-    </div>
+        <motion.div className="imageGallery" layout>
+          {filteredImages.map((image) => (
+            <motion.div
+              key={image.id}
+              className={`${"imageItem"} ${"category"}`}
+              layoutId={`image-${image.id}`}
+              layout
+              whileHover={{ scale: 1.1 }}
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={300}
+                height={200}
+                layout="responsive"
+              />
+              <AnimatePresence>
+                {image.category === selectedCategory && (
+                  <motion.div
+                    className="imageLink"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 20 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Link href="/image-link">
+                      <p className="linkText" href="#">{image.alt}</p>
+                    </Link>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
+          ))}
+        </motion.div>
+        <div className="load-more">
+          <button type="#">Load More</button>
+        </div>
+      </div>
+    </>
   );
 };
 

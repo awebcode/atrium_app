@@ -1,7 +1,9 @@
 .haveProject{
+    /* margin: 10px 0px; */
     padding: 80px 50px;
     background-color: #0167DA;
     color: var(--white);
+    margin-bottom: 0px;
 }
 .haveProjectContainer{
     display: flex;
@@ -23,6 +25,9 @@ color: var(--white);
     color: white;
 }
 @media(max-width:768px){
+    /* .haveProject{
+        margin: 20px 0px;
+    } */
     .haveProjectContainer h1{
         margin: 10px 0px;
     font-size: 20px;

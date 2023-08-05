@@ -8,8 +8,7 @@ import React, { useState } from "react";
 const Dropdown = () => {
     const [toggle, setToggle] = useState();
   return (
-      <header className="header_x">
-         
+    <header className="header_x">
       <a href="#" className="logo">
         Artrium<span style={{ color: "var(--secondary-color)" }}>.</span>
       </a>
@@ -60,19 +59,19 @@ const Dropdown = () => {
           </li>
           <li>
             {" "}
-            <a href="#">About</a>
+            <Link href="#">About</Link>
             <ul>
               <li>
-                <a href="#">Our Mission</a>
+                <Link href="/ourmission">Our Mission</Link>
               </li>
               <li>
-                <a href="#">Our History</a>
+                <Link href="/ourhistory">Our History</Link>
               </li>
               <li>
-                <a href="#">Our Services</a>
+                <Link href="/ourservices">Our Services</Link>
               </li>
               <li>
-                <a href="#">Our Team</a>
+                <Link href="/ourteam">Our Team</Link>
               </li>
             </ul>
           </li>
@@ -106,7 +105,6 @@ const Dropdown = () => {
                   <li>
                     <a href="#">2 Styles</a>
                   </li>
-                 
                 </ul>
               </li>
             </ul>

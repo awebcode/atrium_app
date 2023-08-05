@@ -1,6 +1,194 @@
-.contact{
-   
+/* CSS for contact card container */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2rem 0;
 }
-.contact-container{
 
+.contact-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 50px;
+  width: 100%; /* Adjust padding for bigger screens */
+}
+
+.contact-card {
+  flex: 1;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: start; /* Align content to the top */
+  flex-direction: column;
+  gap: 30px;
+  padding: 6rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  cursor: pointer;
+}
+.contact-card:hover>svg{
+  transform: scale(1.5);
+}
+
+.contact-card svg {
+  color: var(--secondary-color);
+  font-size: 36px;
+  transition: all 0.1s ease;
+}
+
+.contact-card h1 {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1.8;
+  font-family: "Popins";
+}
+.contact-card h1:hover{
+  color: var(--secondary-color);
+}
+.contact-card p {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* CSS for responsive contact section */
+.contact-section {
+  text-align: center;
+  margin: 2rem auto; /* Center the contact section */
+  max-width: 800px;
+  padding: 4rem 2rem; /* Limit the width of the contact section */
+}
+
+.contact-section p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.contact-section h2 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.contact-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  width: 15%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  margin: -10px 0px;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-input-group {
+  flex: 1;
+  margin: 0.5rem;
+}
+.contact-input-group{
+  display: flex;
+}
+
+.contact-input-group input,
+.contact-input-group.x2 input,
+.contact-input-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px;
+}
+.contact-input-group.x2{
+   flex: 1;
+   margin: 0.5rem;
+}
+.contact-input-group.x2 input {
+  padding: 2rem;
+  
+}
+
+.contact-submit-btn {
+  margin: 10px 10px;
+  padding: 10px 60px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--normal);
+  background-color: transparent;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .contact-card-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+    height: auto;
+    width: 100%;
+  }
+  .contact-card svg{
+    font-size: 25px;
+  }
+.contact-card h1{
+  font-size: 30px;
+}
+  .contact-section {
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .contact-input-group {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .contact-input-group input {
+    padding: 0.5rem;
+  
+}
+  .contact-input-group.x2 input {
+    padding: 1rem;
+  
+}
+
+  .contact-submit-btn {
+    margin-top: 0.3rem;
+    padding: 10px 1.5rem;
+  }
+}
+
+/* Styles for big screens */
+@media screen and (min-width: 769px) {
+  .contact-card-container {
+    padding: 50px; /* Keep the original padding for bigger screens */
+  }
 }

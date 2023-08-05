@@ -1,6 +1,101 @@
-.portfolio{
-   
+.projects.x2{
+    display: flex;justify-content: center;align-items: center;
 }
-.portfolio-container{
+.projects.x2 .projects-header h2{
+color: var(--primary-color);
+font-size: 25px;
+text-transform: uppercase;
+font-weight: 500;
+margin-left: 10px;
+}
+.projects .projects-header h1{
+    color: var(--primary-color);
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-transform: uppercase;
+    position: relative;
+    margin: 10px 5px;
+}
+.projects.x2 .projects-header h1::after{
+    content:"";
+    position: absolute;
+    bottom: 0px;left: 0px;
+    width: 10%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: -10px 0px;
+}
+.projects.x2 .projects-header p{
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--primary-color);
+    line-height: 1.4;
+    margin-left: 14px;
+}
+.projectSection.x2{
+     padding: 40px 60px;
+   
+    height: auto;
+   
+    width: 100%;
+}
 
+.projectSection.x2 .project-nav.x2{
+    display: flex;justify-content: center;align-items: center;
+}
+@media(max-width:768px){
+    .projectSection.x2{
+        padding: 10px;
+    }
+    .projects.x2 .projects-header h2{
+
+font-size: 18px;
+text-transform: uppercase;
+font-weight: 400;
+margin-left: 5px;
+}
+.projects.x2 .projects-header h1{
+   
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    position: relative;
+    margin: 10px 5px;
+}
+.projects.x2 .projects-header h1::after{
+    content:"";
+    position: absolute;
+    bottom: 0px;left: 0px;
+    width: 10%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: -10px 0px;
+}
+.projects.x2 .projects-header p{
+    font-size: 12px;
+    font-weight: 200;
+    color: var(--primary-color);
+    line-height: 1.4;
+    margin-left: 8px;
+}
+}
+/* hover anim */
+.linkText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0; /* The link text is initially hidden */
+  pointer-events: none; /* Allow hovering over the link text without triggering click events */
+}
+
+.imageItem:hover .linkText {
+  opacity: 1; /* Show the link text on hover */
 }

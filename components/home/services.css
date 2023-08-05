@@ -4,7 +4,9 @@
   background-color: #222A35;
   width: 100%;
 }
-
+.home-services.x2{
+    padding: 70px;
+}
 .home-services-container {
   width: 100%;
   display: flex;
@@ -51,6 +53,9 @@
     .home-services{
         padding: 20px;
     }
+    .home-services.x2{
+    padding: 30px;
+}
     .home-services-container{
         flex-direction: column;
     }

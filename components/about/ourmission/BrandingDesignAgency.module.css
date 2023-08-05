@@ -1,0 +1,58 @@
+.container {
+  background-image: linear-gradient(rgba(8, 15, 14, 0.514), rgba(0, 4, 8, 0.3)), url("/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+}
+
+.h1x {
+  font-size: 66px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.px {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 15px 44px;
+  border: none;
+  border-radius: 4px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .container {
+    height: 400px;
+  }
+
+  .h1x {
+    font-size: 30px;
+  }
+
+  .px {
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+}
+
+/* Add more media queries as needed for other screen sizes */

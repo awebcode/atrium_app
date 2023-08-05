@@ -27,7 +27,9 @@ const ClientSays = () => {
     swiperRef.current = new SwiperCore(".swiper-container", {
       loop: true,
       slidesPerView,
+     
       spaceBetween: 20,
+      
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -59,9 +61,9 @@ const ClientSays = () => {
               <Image
                 src={image}
                 alt={`Slide ${index + 1}`}
-                height={1000}
-                width={1000}
-                
+                height={100}
+                width={100}
+                layout="responsive"
               />
             </SwiperSlide>
           ))}

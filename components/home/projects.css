@@ -103,15 +103,17 @@ margin-left: 10px;
     .project-nav{
         flex-direction: column;
     }
-    .filterButtons{
+    /* .filterButtons{
         flex-direction: column;
-    }
+    } */
     .filterButtons button{
-        font-size: 14px;
+        font-size: 12px;
+        padding: 3px;
     }
     .imageGallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   grid-gap: 10px;
   margin: 20px;
 }

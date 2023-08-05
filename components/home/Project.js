@@ -24,14 +24,32 @@ const images = [
     category: "development",
   },
   {
+    id: 8,
+    src: "/team1.jpg",
+    alt: "Development",
+    category: "development",
+  },
+  {
     id: 3,
     src: "/projects/4.jpg",
     alt: "Apps",
     category: "apps",
   },
   {
+    id: 9,
+    src: "/projects/5.jpg",
+    alt: "Apps",
+    category: "apps",
+  },
+  {
     id: 4,
     src: "/projects/3.jpg",
+    alt: "Branding",
+    category: "branding",
+  },
+  {
+    id: 10,
+    src: "/team2.jpg",
     alt: "Branding",
     category: "branding",
   },
@@ -60,7 +78,7 @@ const ProjectSection = () => {
           <button onClick={() => handleFilter("branding")}>BRANDING</button>
               </div>
               <div>
-                <Link  href="/projects" style={{cursor:"pointer",color:"var(--primary-color)"}}>see all projects</Link>
+                <Link  href="/projects" style={{cursor:"pointer",color:"var(--primary-color)",fontSize:"14px"}}>see all projects</Link>
               </div>
       </div>
 
@@ -78,7 +96,7 @@ const ProjectSection = () => {
               alt={image.alt}
               width={300}
               height={200}
-              
+              layout="responsive"
             />
           </motion.div>
         ))}

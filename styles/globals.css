@@ -41,12 +41,12 @@ html{
 body{
   background-color: #F2F5FA;
 }
-.container{
-  margin: 20px 80px;
+/* .container{
+  padding: 20px 80px;
 }
 @media(max-width:768px){
  .container{
-  margin: 10px 20px;
+  padding: 10px 20px;
 }
-}
+} */
 /* dropdown */

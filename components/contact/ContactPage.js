@@ -36,7 +36,7 @@ const ContactPage = () => {
       <Map />
       <div className="contact-section">
         <p>TELL US MORE ABOUT YOUR PROJECT</p>
-        <h2 className="contact-header">LET'S WORK TOGETHER</h2>
+        <h2 className="contact-header">LET&apos;S WORK TOGETHER</h2>
         <div className="contact-form">
           <div className="contact-input-group">
             <input type="text" placeholder="Your Name" />
@@ -48,7 +48,7 @@ const ContactPage = () => {
           </div>
         </div>
         <button className="contact-submit-btn" type="submit">
-         Send Your Message
+          Send Your Message
         </button>
       </div>
 

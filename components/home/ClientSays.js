@@ -12,7 +12,7 @@ const images = [
   "/projects/3.jpg",
   "/projects/2.jpg",
   "/projects/4.jpg",
-  "/team-1.jpg",
+  "/team1.jpg",
   "/team2.jpg",
   // Add more image URLs as needed
 ];
